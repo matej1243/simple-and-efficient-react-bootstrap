@@ -13,7 +13,7 @@ const App = () => {
 
             <Container className="mt-5">
                 <Row>
-                    {[...Array(numberOfItems)].map(number => (
+                    {Array.from(Array(numberOfItems).keys()).map(number => (
                         <Col key={number}>
                             <Item></Item>
                         </Col>
